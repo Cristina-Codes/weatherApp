@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body class="starterBackground">
+  <!-- weather background videos -->
+  <video autoplay muted loop class="rainVideo video">
+    <source src="./styles/assets/rainy.mp4" type="video/mp4">
+    <p class="rainCredit">Video by Bokor Marketing from Pexels</p>
+  </video>
+
+  <video autoplay muted loop class="snowVideo video">
+    <source src="./styles/assets/snow.mp4" type="video/mp4">
+    <p class="snowCredit">Video by Jon T from Pexels</p>
+  </video>
+
+
+  <header>
+    <div class="wrapper">
+      <h1>Weather App</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="search wrapper">
+      <h2>Enter the zipcode below:</h2>
+      <form action="#" class="formWidth">
+        <label for="location">Location</label>
+        <input type="text" placeholder="Enter zipcode" id="location">
+        <button class="current" type="submit">Check That Weather!</button>
+      </form>
+    </section>
+
+    <section class="wrapper">
+      <div class="results">
+    <!-- results structured for current weather -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrapper">
+    <p>Created at <a href="https://junocollege.com/" target="_blank">Juno College</a></p>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
